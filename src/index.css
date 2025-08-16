@@ -1,0 +1,36 @@
+/* 1. Import Outfit from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --color-lite: #9E9E9E;
+  --color-white: #FFFFFF;
+  --color-black: #252525;
+  --color-grey: #DEE6FF;
+  --color-text-field: #353535;
+  --color-table-header: #E8EEFF;
+  --color-table-hover: #EEF3FF;
+  --color-table-selected: #E0E9FF;
+  --color-button-idle: #223D9F;
+  --color-button-hover: #3054E5;
+  --color-button-active: #2744B4;
+  --color-button-disable: #9CA3AF;
+  --color-sensor-alert: #AD0909;
+  --color-sensor-noalert: #23B6F6;
+  --color-sensor-on: #1A9F0B;
+  --color-bg-movement: #FBF1D7;
+  --color-bg-trip: #F2FAF1;
+  --color-popup-bottom: rgba(48, 84, 229, 0.30);
+  --color-status-error: #EF3934;
+  --color-status-info: #3054E5;
+  --color-hover: rgba(0, 0, 0, 0.12);
+}
+
+/* 2. Apply globally */
+body {
+  font-family: 'Outfit';
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
