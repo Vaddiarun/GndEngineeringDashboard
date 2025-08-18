@@ -1419,11 +1419,13 @@ import { api } from "../api";
 import { FaPlus, FaTrash, FaPlay, FaCheck } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { useLocation } from "react-router-dom";
 export default function TaskManagement() {
   const { id: productId } = useParams();
   const [searchParams] = useSearchParams();
   const category = searchParams.get("category") || "";
+  const location = useLocation();
+  const productName = location.state?.productName || "Unknown Product";
 
   const [tasks, setTasks] = useState([]);
   const [newTaskTitle, setNewTaskTitle] = useState("");
@@ -1549,7 +1551,7 @@ export default function TaskManagement() {
   return (
     <div className="p-6 max-w-7xl mx-auto">
       <ToastContainer position="top-right" autoClose={3000} />
-      <h1 className="text-3xl font-bold mb-6">Tasks - {category}</h1>
+      <h1 className="text-3xl font-bold mb-6">{productName}-{category}</h1>
 
       {/* Add Task Form */}
       <div className="bg-white p-4 rounded-lg shadow mb-6 flex flex-col sm:flex-row gap-3 items-center flex-wrap">
