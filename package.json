@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.20.7",
-    "@tailwindcss/vite": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.12",
     "apexcharts": "^5.2.0",
     "axios": "^1.10.0",
     "formik": "^2.4.6",
@@ -27,8 +27,10 @@
     "react-plotly.js": "^2.5.1",
     "react-router-dom": "^7.6.3",
     "react-toastify": "^11.0.5",
+    "react-tsparticles": "^2.12.2",
     "recharts": "^3.1.0",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.1.12",
+    "tsparticles": "^3.9.1",
     "yup": "^1.6.1"
   },
   "devDependencies": {
@@ -53,3 +55,5 @@
     }
   }
 }
+ 
+ 
